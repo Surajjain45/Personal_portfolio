@@ -19,11 +19,33 @@ let sections = document.querySelectorAll('section')
 let navlinks = document.querySelectorAll('header nav a')
 
 
+let menu_icon = document.querySelector("#menu_icon")
+let navbar = document.querySelector(".navbar")
+let cross = document.querySelector(".cross")
 
+ menu_icon.addEventListener("click",e=>{
+     cross.style.display = "block"
+     menu_icon.style.display = "none"
+     navbar.classList.add("activated")
+})
 
+cross.addEventListener("click",e=>{
+   navbar.classList.remove("activated")
+   menu_icon.style.display = "block"
+   cross.style.display = "none"
+})
 
+let body = document.querySelector('body')
+window.addEventListener('resize',e=>{
 
+   if(body.offsetWidth>535){
+      menu_icon.style.display = "none"
+   }
 
+   else{
+      menu_icon.style.display = "block"
+   }
+})
 
 
 let header = document.querySelector('header')
@@ -48,11 +70,19 @@ window.onscroll=()=>{
       })
       }
 
-      // else{
-      //    sec.classList.remove('show_animate')
-      // }
    })
+
+    let body = document.querySelector('body')
 
    let header = document.querySelector('header')
    header.classList.toggle('sticky', window.scrollY > 100)
+
+   navbar.classList.remove("activated")
+   cross.style.display = "none"
+
+   if(body.offsetWidth<=535){
+      menu_icon.style.display = "block"
+   }
 }
+
+
