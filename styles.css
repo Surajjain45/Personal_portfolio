@@ -33,6 +33,7 @@ body{
 }
 
 .header{
+    /* border: 2px solid green; */
       display: flex;
       padding: 2rem 9%;
       position: fixed;
@@ -87,6 +88,7 @@ section{
 }
 
 .home{
+    /* border: 2px solid red; */
     display: flex;
     /* flex-direction: column; */
     align-items: center;
@@ -94,7 +96,7 @@ section{
     background: url(images/pp_new-removebg-preview1.jpg);
     background-position: 730px;
     background-repeat: no-repeat;
-    /* background-size: contain; */
+    background-size: contain;
     /* background-size: ; */
     background-size: 30%;
 }
@@ -242,6 +244,7 @@ section{
 }
 
 .icons{
+    /* border: 2px solid green; */
     color: red;
     position: absolute;
     bottom: 4rem;
@@ -591,6 +594,8 @@ section{
     transition: 0.5s;
 }
 
+
+
 .skills .skills_box:hover::before{
     width: 100%;
 }
@@ -863,10 +868,64 @@ section{
     }
 }
 
+@media(max-width:1010px){
+    .skills_row{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .title{
+        text-align: center;
+    }
+}
+
 @media(max-width:1200px)
 {
     html{
         font-size: 55%;
+    }
+}
+
+@media(max-width:410px){
+    /* .body{
+        width: max-content;
+    }
+
+    .header{
+        width: 50%;
+        border: 2px solid red;
+    } */
+
+    .image_hover{
+        display: none;
+    }
+}
+
+
+@media(max-width:535px)
+{
+    
+    .navbar{
+        display: none;
+    }
+
+   
+    #menu_icon{
+        display: block;
+    }
+}
+
+@media(max-width:520px){
+
+    .title{
+        text-align: center;
+    }
+    .skills_column{
+        width: 100%;
+    }
+
+    .skills_content{
+        width: 90%;
     }
 }
 
@@ -884,7 +943,21 @@ section{
     .education_rows{
         width: 180%;
     }  
+
+    .footer{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .box-btn{
+        text-align: center;
+        justify-content: center;
+    }
+
 }
+
+
+
 
 
 
