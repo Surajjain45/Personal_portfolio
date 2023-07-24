@@ -85,4 +85,29 @@ window.onscroll=()=>{
    }
 }
 
+let abt_btn = document.querySelector(".about-btn")
+let read_boxes = document.querySelector(".read_boxes")
+let read_p = document.querySelectorAll(".about-heading p")
+
+flag = 0;
+
+abt_btn.addEventListener("click",e=>{
+
+   if(flag==0){
+      abt_btn.children[0].innerHTML = "Read less"
+      flag = 1;
+   }
+
+   else{
+      abt_btn.children[0].innerHTML = "Read More"
+      flag = 0;
+   }
+   
+   read_boxes.classList.toggle("hide")
+
+   read_p.forEach(element=>{
+      element.classList.toggle("hide")
+   })
+})
+
 
