@@ -1082,6 +1082,8 @@ section{
 
     .Home-content p{
         font-size:1.4rem;
+    }
+}
 
     @keyframes homebgtext{
         0%,
