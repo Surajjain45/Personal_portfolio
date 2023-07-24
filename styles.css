@@ -1065,7 +1065,7 @@ section{
     }
 
     .Home-content p{
-        font-size: 1.2rem;
+        font-size: 1.4rem;
     }
 
    
@@ -1073,12 +1073,15 @@ section{
 
 @media(max-width:485px){
     .Home-content h1{
-        font-size: 3.4rem;
+        font-size: 3.6rem;
     }
 
     .job{
         font-size:2.3rem ;
     }
+
+    .Home-content p{
+        font-size:1.4rem;
 
     @keyframes homebgtext{
         0%,
