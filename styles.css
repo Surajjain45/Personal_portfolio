@@ -146,7 +146,7 @@ section{
     0%,
     10%,
     100%{
-        background-position: -33rem 0;
+        background-position: -28.5rem 0;
     }
 
     65%,
@@ -1052,7 +1052,7 @@ section{
     }
 
     .Home-content p{
-        font-size: 1.3rem;
+        font-size: 1.5rem;
     }
 }
 
