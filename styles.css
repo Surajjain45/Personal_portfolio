@@ -146,7 +146,7 @@ section{
     0%,
     10%,
     100%{
-        background-position: -28.5rem 0;
+        background-position: -33rem 0;
     }
 
     65%,
@@ -176,7 +176,7 @@ section{
 }
 
 .Home-content p{
-    font-size: 1.6rem;
+    /* font-size: 4rem; */
     margin: 2rem 0 4rem;
 }
 
@@ -773,21 +773,7 @@ section{
     cursor: pointer;
 }
 
-/* .input_field::before{
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 0;
-    
-    z-index: -1;
-    background-color: var(--second-bg-color);
-}
 
-.input_field:hover::before
-    background-color: #081b29;
-    width: 100%; */
 .contact form .focus{
     position: absolute;
     top: 0;
@@ -1054,6 +1040,19 @@ section{
     .Home-content p{
         font-size: 1.5rem;
     }
+
+    @keyframes homebgtext{
+        0%,
+        10%,
+        100%{
+            background-position: -28.5rem 0;
+        }
+    
+        65%,
+        85%{
+            background-position: 0 0;
+        }
+    }
 }
 
 @media(max-height:564px){
@@ -1068,6 +1067,32 @@ section{
     .Home-content p{
         font-size: 1.2rem;
     }
+
+   
+}
+
+@media(max-width:485px){
+    .Home-content h1{
+        font-size: 3.4rem;
+    }
+
+    .job{
+        font-size:2.3rem ;
+    }
+
+    @keyframes homebgtext{
+        0%,
+        10%,
+        100%{
+            background-position: -23.5rem 0;
+        }
+    
+        65%,
+        85%{
+            background-position: 0 0;
+        }
+    }
+
 }
 
 @media(max-height:526px){
